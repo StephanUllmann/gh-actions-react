@@ -13,18 +13,18 @@ const BASE_URL = 'https://stars-api-8vmk.onrender.com/stars';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/gh-actions-react/',
     element: <App />,
     children: [
       {
-        path: '/',
+        path: '/gh-actions-react/',
         element: <Stars />,
         loader: async () => {
           return fetch(BASE_URL);
         },
       },
       {
-        path: '/:id',
+        path: '/gh-actions-react/:id',
         element: <SingleStar />,
         // element: <StarPage />,
         // loader: async ({ params }) => {
