@@ -9,5 +9,6 @@ describe('header component', () => {
     render(<Header />);
 
     expect(screen.getByText('Webb Gallery')).toBeInTheDocument();
+    expect(screen.getByText('Fancy stars')).toBeInTheDocument();
   });
 });
